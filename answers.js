@@ -274,4 +274,44 @@ function arraySum(array) {
     return total;
 }
 
-console.log(arraySum([1,100,1,1,1,1]));
+// console.log(arraySum([1,100,1,1,1,1]));
+
+
+
+/* Write a function that takes two arrays, 
+and returns an array of all elements that are only in one array. 
+For example, with `[1,2,3]` and `[1,2,4,5]` the function should return `[3,4,5]`. 
+Test your function on different inputs. 
+Hint: you should look up array methods `indexOf` and `slice`. */
+
+function arraySimilars(array1, array2) {
+    var resultArray = [];
+    var index = 0;
+    
+    //lets see if array1 items are in array 2
+    while (index < array1.length) {
+        if (array2.indexOf(array1[index]) >= 0) {
+            index++;
+        }
+        else {
+            resultArray.push(array1[index]);
+            index++;
+        }
+    }
+    index = 0;
+    //lets see if array2 items are in array 1
+    while (index < array2.length) {
+        if (array1.indexOf(array2[index]) >= 0) {
+            index++;
+        }
+
+        else {
+            resultArray.push(array2[index]);
+            index++;
+        }
+
+    }
+    return resultArray;
+}
+
+console.log(arraySimilars([1,2,3,99,105],[1,2,4,5,36]));

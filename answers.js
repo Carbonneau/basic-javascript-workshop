@@ -172,4 +172,41 @@ function longestWord(str) {
     }
 
 
-console.log(longestWord("roses are red and violets are blue, I smell funny and so do you"))
+// console.log(longestWord("roses are red and violets are blue, I smell funny and so do you"))
+
+
+
+/* Write a function that takes a phrase, 
+and returns the same phrase with every word capitalized. 
+For example, if you pass your function "hello world", 
+it should return "Hello World" and 
+if you pass it "HELLO WORLD" or even "HeLLo WoRLD", 
+it will also return "Hello World". 
+Test your function of a few inputs. */
+
+function returnCaps(str) {
+     
+    var workingArray = str.split("");
+    var index = 1;
+    var result = "";
+    result += workingArray[0].toUpperCase();
+    while(index < workingArray.length) {
+        if(workingArray[index] === " ") {
+            result += " "
+            result += workingArray[(index + 1)].toUpperCase();
+            index += 2          
+        }
+        else {
+            result += workingArray[index].toLowerCase();
+            index ++;
+        }
+        
+        
+    }
+    
+  return result;  
+}
+
+console.log(returnCaps("i REALLY feel small!!!!"))
+
+

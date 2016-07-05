@@ -78,4 +78,21 @@ function aMathFunction(num1, num2, str) {
     }
 }
 
-console.log(aMathFunction(5,5,"div"))
+// console.log(aMathFunction(5,5,"div"))
+
+/* Write a function that takes a string and a number, 
+and returns the string repeated that many number of times. 
+Test your function with various inputs. */
+
+function growString (num,str) {
+    var resultString = ""
+    var index = 0
+    while (index < num) {
+        resultString += str;
+        index ++;
+    }
+    return resultString;
+}
+
+console.log(growString(500000,"hello"))
+

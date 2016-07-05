@@ -142,4 +142,34 @@ function factorialOf(num) {
 }
 
 
-console.log(factorialOf(4));
+// console.log(factorialOf(4));
+
+
+
+
+/* Write a function that takes a phrase as a string, 
+and returns the longest word in that phrase. 
+If the phrase contains more than one such word, 
+return the first occurrence. 
+Test your function on a few inputs. */
+
+
+
+function longestWord(str) {
+    var workingArray = str.split(" ");
+    var iter = 0
+    var resultWord = ""
+    while(iter < workingArray.length) {
+        if(workingArray[iter].length > resultWord.length) {
+            resultWord = workingArray[iter];
+            iter ++;
+        }
+        else {
+            iter ++;
+        }
+        }
+        return resultWord;
+    }
+
+
+console.log(longestWord("roses are red and violets are blue, I smell funny and so do you"))

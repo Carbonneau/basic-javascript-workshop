@@ -314,4 +314,28 @@ function arraySimilars(array1, array2) {
     return resultArray;
 }
 
-console.log(arraySimilars([1,2,3,99,105],[1,2,4,5,36]));
+//console.log(arraySimilars([1,2,3,99,105],[1,2,4,5,36]));
+
+/* **Mini Challenge**: 
+
+write a function that takes an array and a function as arguments. 
+The function should return a new array that maps every element of 
+the input array by passing it through the function you received. 
+You are not allowed to use `Array.map` for this challenge, 
+otherwise it would be too easy :) */
+
+
+function funkyFunction(func, array) {
+    var result = [];
+    var index = 0;
+    while(index < array.length) {
+        result.push(func(array[index]));
+        index ++;
+    }
+    return result;
+}
+
+console.log(funkyFunction(reverseString,["ziad", "codrin", "kevin"]));
+
+
+

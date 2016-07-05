@@ -54,5 +54,28 @@ function multiplyThese(num1, num2) {
     return num1 * num2;
 }
 
-console.log(multiplyThese(10, 10))
+// console.log(multiplyThese(10, 10))
 
+/* Write a function that takes two numbers and a string. 
+If the string is ‘add’, then return the sum of the numbers. 
+If the string is ‘subtract’, return the difference. 
+If the string is ‘mult’, return the product. 
+If the string is ‘div’, return the ratio. 
+Otherwise return 0. */
+
+function aMathFunction(num1, num2, str) {
+    switch(str) {
+        case "add":
+            return num1 + num2;
+        case "subtract":
+            return num1 - num2;
+        case "mult":
+            return num1 * num2;
+        case "div": 
+            return num1/num2;
+        default:
+            return 0;
+    }
+}
+
+console.log(aMathFunction(5,5,"div"))

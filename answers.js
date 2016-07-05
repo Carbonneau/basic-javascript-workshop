@@ -257,4 +257,21 @@ function filteredArray(array) {
 }
 
 
-console.log(filteredArray([true, false, undefined, null, "a string", 1232, 1.0987, -1, 1, 0]));
+// console.log(filteredArray([true, false, undefined, null, "a string", 1232, 1.0987, -1, 1, 0]));
+
+
+
+/* Write a function that takes an array of numbers, 
+and returns the sum of all the numbers in the array. */
+
+function arraySum(array) {
+    var index = 0;
+    var total = 0;
+    while(index < array.length) {
+        total += array[index];
+        index ++;
+    }
+    return total;
+}
+
+console.log(arraySum([1,100,1,1,1,1]));

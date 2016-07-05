@@ -207,6 +207,30 @@ function returnCaps(str) {
   return result;  
 }
 
-console.log(returnCaps("i REALLY feel small!!!!"))
+// console.log(returnCaps("i REALLY feel small!!!!"))
+
+
+
+/* Write a function that takes an array 
+and returns the largest number of the array. 
+Test your function on a few inputs. */
+
+function whoIsBigger(array) {
+    var index = 1;
+    var biggest = array[0];
+    while(index < array.length) {
+        if(array[index] > biggest) {
+            biggest = array[index];
+            index ++;
+        }
+        else {
+            index ++;
+        }
+    }
+    return biggest;
+}
+
+console.log(whoIsBigger([0,5,70,3,6,9,22,4]))
+
 
 

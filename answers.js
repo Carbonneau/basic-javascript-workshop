@@ -41,4 +41,18 @@ function addThese(num1,num2) {
     return num1 + num2;
 }
 
-console.log(addThese(100,200))
+// console.log(addThese(100,200))
+
+/* Write a function that takes two numbers and multiplies them together. 
+Test your function on a few inputs. 
+Write in your comments what happens 
+when you pass something other than a number to your function. */
+
+function multiplyThese(num1, num2) {
+    //javascript is weird, even if you pass a number in a string, they still get
+    //miltiplied together. true = 1, and false = 0.
+    return num1 * num2;
+}
+
+console.log(multiplyThese(10, 10))
+

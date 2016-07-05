@@ -28,4 +28,17 @@ function charPosition(aString,number) {
     return aString[number];
 }
 
-console.log(charPosition("why?",3));
+// console.log(charPosition("why?",3));
+
+/* Write a function that takes two numbers and adds them together. 
+Test your function on a few inputs. 
+Write in the comments what happens when you pass something other 
+than a number to your function. */
+
+function addThese(num1,num2) {
+    //If you add a string and a number, 
+    //the result will be the two item concoctenated together
+    return num1 + num2;
+}
+
+console.log(addThese(100,200))

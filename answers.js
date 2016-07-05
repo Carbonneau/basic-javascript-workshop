@@ -80,6 +80,10 @@ function aMathFunction(num1, num2, str) {
 
 // console.log(aMathFunction(5,5,"div"))
 
+
+
+
+
 /* Write a function that takes a string and a number, 
 and returns the string repeated that many number of times. 
 Test your function with various inputs. */
@@ -94,5 +98,25 @@ function growString (num,str) {
     return resultString;
 }
 
-console.log(growString(500000,"hello"))
+// console.log(growString(500000,"hello"))
 
+
+
+
+/* Write a function that takes a string, 
+and returns the reverse of that string. 
+For example, if you pass the function the string “hello”, 
+it should return “olleh”. 
+Test your function on a few inputs, including the empty string. */
+
+function reverseString (str) {
+    var index = str.length - 1;
+    var result = ""
+    while(index >= 0) {
+        result += str[index];
+        index --;
+    }
+    return result;
+}
+
+console.log(reverseString("hello"));

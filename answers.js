@@ -230,7 +230,31 @@ function whoIsBigger(array) {
     return biggest;
 }
 
-console.log(whoIsBigger([0,5,70,3,6,9,22,4]))
+// console.log(whoIsBigger([0,5,70,3,6,9,22,4]))
 
 
 
+
+/* Write a function that takes an array, 
+and returns a filtered array. 
+The filtered array should only contain the truthy values from the initial array. 
+Hint: there is an array method called `filter` that can help you with this :) */
+
+function filteredArray(array) {
+    var newArray = [];
+    var index = 0;
+    while(index < array.length) {
+        
+        if(Boolean(array[index]) == true) {
+            newArray.push(array[index]);
+            index ++;
+        }
+        else {
+            index ++;
+        }
+    }
+    return newArray;
+}
+
+
+console.log(filteredArray([true, false, undefined, null, "a string", 1232, 1.0987, -1, 1, 0]));
